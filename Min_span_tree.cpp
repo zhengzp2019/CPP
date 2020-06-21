@@ -5,9 +5,9 @@ using namespace std;
 
 typedef struct TNode //树节点
 {
-    struct TNode *next; //子节点
+    struct TNode *next; //相邻的结点
     int name;           //结点名
-    int weight;         //与父节点之间的权重
+    int weight;         //边的权重
 } TNode;
 
 typedef struct Arc //弧以及连接弧的两结点
@@ -133,6 +133,6 @@ int main()
     }
     Input(G, length);
     int sum = Min_span_tree(G, T, length);
-    cout << "最小生成树的权值为：" << sum << endl;
+    cout << "最小生成树的权值之和为：" << sum << endl;
     return 0;
 }
