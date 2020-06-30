@@ -122,7 +122,7 @@ int main()
     int length; //结点长度
     cout << "请输入图结点数目" << endl;
     cin >> length;
-    vector<vector<int>> G(length, vector<int>(length)); //存储图的权值
+    vector<vector<int>> G(length, vector<int>(length)); //图的关系矩阵
     vector<TNode> T(length);                            //存储树
     //初始化T
     for (int i = 0; i < length; i++)

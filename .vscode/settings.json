@@ -44,7 +44,8 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "ctime": "cpp"
     },
     "python.autoComplete.addBrackets": true
 }
