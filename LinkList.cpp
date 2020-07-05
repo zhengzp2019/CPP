@@ -149,7 +149,7 @@ int LinkList<T>::currentPosition(void) const
 template <class T>
 void LinkList<T>::insertFront(const T &item)
 {
-    Node<T> *p = new Node<T>();
+    Node<T> *p = newNode(item);
     p->date = item;
     if (this->isEmpty())
     {
@@ -163,7 +163,7 @@ void LinkList<T>::insertFront(const T &item)
 template <class T>
 void LinkList<T>::insertRear(const T &item)
 {
-    Node<T> *p = new Node<T>;
+    Node<T> *p = newNode(item);
     p->date = item;
     p->next = rear->next;
     rear->next = p;
@@ -174,7 +174,7 @@ void LinkList<T>::insertRear(const T &item)
 template <class T>
 void LinkList<T>::insertAt(const T &item)
 {
-    Node<T> *p = new Node<T>;
+    Node<T> *p = newNode(item);
     p->date = item;
     p->next = currPtr;
     prevPtr->next = p;
@@ -184,7 +184,7 @@ void LinkList<T>::insertAt(const T &item)
 template <class T>
 void LinkList<T>::insertAfter(const T &item)
 {
-    Node<T> *p = new Node<T>;
+    Node<T> *p = newNode(item);
     p->date = item;
     p->next = currPtr->next;
     currPtr->next = p;

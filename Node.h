@@ -41,7 +41,6 @@ const Node<T> *Node<T>::nextNode() const
 template <class T>
 void Node<T>::insertAfter(Node<T> *p)
 {
-    p->next = next;
     next = p;
 }
 
